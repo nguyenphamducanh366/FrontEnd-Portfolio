@@ -1,0 +1,185 @@
+// Custom Variables
+$primary: #0d6efd;
+$dark: #212529;
+$light: #f8f9fa;
+
+// Global Styles
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  color: $dark;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(13,110,253,0.15) 0%, transparent 70%);
+    z-index: 0;
+  }
+}
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background: $primary;
+  margin-top: 1rem;
+}
+
+.skill-card, .project-card {
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
+.timeline {
+  position: relative;
+  padding-left: 3rem;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 1.5rem;
+    width: 2px;
+    background: $primary;
+  }
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  
+  .timeline-badge {
+    position: absolute;
+    left: -1.2rem;
+    top: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    z-index: 10;
+  }
+}
+
+.contact-form {
+  background: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+// Animation classes
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.progress-container {
+  .progress-line {
+    width: 5px;
+    height: 50em;
+    background: rgba(13, 110, 253, 0.2);
+    
+    .progress-fill {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      transition: height 0.5s ease;
+    }
+  }
+  
+  .progress-dot {
+    margin-left: 18px;
+    width: 16px;
+    height: 16px;
+    background: #0d6efd;
+    border: 2px solid white;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+    
+    &.active {
+      transform: translateX(-50%) scale(1.4);
+      background: white;
+      box-shadow: 0 0 0 3px #0d6efd;
+    }
+    
+    &:hover {
+      transform: translateX(-50%) scale(1.4);
+      
+      .progress-tooltip {
+        opacity: 1;
+        transform: translateY(-50%) translateX(10px);
+      }
+    }
+  }
+  
+  .progress-tooltip {
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(13, 110, 253, 0.9);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    font-size: 0.85rem;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      left: -5px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-right: 5px solid rgba(13, 110, 253, 0.9);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  
+  .display-1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .progress-container {
+    left: 1.5vw !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .progress-container {
+    left: 2vw !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .progress-container {
+    left: 2.5vw !important;
+  }
+}
