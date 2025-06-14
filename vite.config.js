@@ -5,5 +5,5 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'] // Add all extensions you use
-  },base:'/FrontEnd-Portfolio/',
+  },base:'/Frontend-Portfolio/',
 })
