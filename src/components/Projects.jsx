@@ -30,7 +30,7 @@ const projects = [
     description: "A demo platform connecting freelancers and clients for project-based work, enabling easy collaboration and payment processing.",
     technologies: ["HTML", "CSS", "GSAP"],
     image: 'https://ik.imagekit.io/nguyenphamducanh366/image.png?updatedAt=1749966570742',
-    demoLink: "https://grandteam.netlify.app/" 
+    demoLink: "https://nguyenphamducanh366.github.io/Grand-Team/" 
   }
 ];
 
