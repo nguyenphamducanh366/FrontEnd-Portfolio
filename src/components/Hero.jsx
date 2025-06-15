@@ -32,7 +32,7 @@ export default function Hero() {
             <h1 className="hero-text display-1 fw-bold mb-4">Nguyen Pham Duc Anh</h1>
             <h3 className="hero-text mb-4">Full Stack Developer</h3>
             <p className="hero-text lead mb-5">
-              I am an Aspiring Full-Stack Developer with comprehensive skills in modern web technologies 
+              I'm a 22 years old Full-Stack Developer with comprehensive skills in modern web technologies 
             </p>
             <Button 
               variant="primary" 
