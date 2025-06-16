@@ -22,6 +22,7 @@ const projects = [
     description: "A modern, user-friendly CRUD application for efficiently monitoring and managing website performance and data.",
     technologies: ["React", "Ant Design"],
     image: 'https://ik.imagekit.io/nguyenphamducanh366/Admin%20Crud?updatedAt=1749888016455', 
+    sourceCode: "https://github.com/nguyenphamducanh366/CRUD-React.git", 
     demoLink: "https://nguyenphamducanh366.github.io/CRUD-React/"
   },
   {
@@ -30,6 +31,7 @@ const projects = [
     description: "A demo platform connecting freelancers and clients for project-based work, enabling easy collaboration and payment processing.",
     technologies: ["HTML", "CSS", "GSAP"],
     image: 'https://ik.imagekit.io/nguyenphamducanh366/image.png?updatedAt=1749966570742',
+    sourceCode: "https://github.com/nguyenphamducanh366/Grand-Team.git", 
     demoLink: "https://nguyenphamducanh366.github.io/Grand-Team/" 
   }
 ];
