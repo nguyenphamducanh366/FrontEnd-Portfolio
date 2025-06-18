@@ -8,6 +8,16 @@ gsap.registerPlugin(ScrollTrigger);
 
 const skills = [
   { 
+    name: 'HTML5', 
+    icon: 'https://ik.imagekit.io/nguyenphamducanh366/4373229_html5_logo_logos_icon.png?updatedAt=1750240960878', 
+    color: '#e34c26' 
+  },
+   { 
+    name: 'CSS/SCSS', 
+    icon: 'https://ik.imagekit.io/nguyenphamducanh366/css-3.png?updatedAt=1749916043091', 
+    color: '#2965F1'
+  },
+  { 
     name: 'JavaScript', 
     icon: 'https://ik.imagekit.io/nguyenphamducanh366/js.png?updatedAt=1749916043087', 
     color: '#F7DF1E' 
@@ -26,11 +36,6 @@ const skills = [
     name: 'Node.js', 
     icon: 'https://ik.imagekit.io/nguyenphamducanh366/icons8-nodejs-240.png?updatedAt=1749916785230', 
     color: '#339933' 
-  },
-  { 
-    name: 'CSS/SCSS', 
-    icon: 'https://ik.imagekit.io/nguyenphamducanh366/css-3.png?updatedAt=1749916043091', 
-    color: '#2965F1'
   }
 ];
 
