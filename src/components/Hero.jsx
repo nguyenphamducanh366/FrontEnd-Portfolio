@@ -22,6 +22,15 @@ export default function Hero() {
       delay: 1
     });
   }, { scope: comp });
+  const handleDownload = () => {
+    const cvUrl = './assets/cv/Nguyen Pham Duc Anh-CV.pdf';
+    const link = document.createElement('a');
+    link.href = cvUrl;
+    link.download = 'Nguyen_Pham_Duc_Anh_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <section id="home" className="hero-section vh-100 d-flex align-items-center" ref={comp}>
@@ -32,24 +41,34 @@ export default function Hero() {
             <h1 className="hero-text display-1 fw-bold mb-4">Nguyen Pham Duc Anh</h1>
             <h3 className="hero-text mb-4">Full Stack Developer</h3>
             <p className="hero-text lead mb-5">
-              I'm a 22 years old Full-Stack Developer with comprehensive skills in modern web technologies 
+              I'm a 22 years old Full-Stack Developer with comprehensive skills in making modern e-commerce websites
             </p>
-            <Button 
-              variant="primary" 
-              size="lg" 
-              className="hero-btn me-3"
-              href="#projects"
-            >
-              View Projects
-            </Button>
-            <Button 
-              variant="outline-light" 
-              size="lg" 
-              className="hero-btn"
-              href="#contact"
-            >
-              Contact Me
-            </Button>
+            <div className="d-flex flex-wrap gap-3">
+              <Button 
+                variant="primary" 
+                size="lg" 
+                className="hero-btn"
+                href="#projects"
+              >
+                My Projects
+              </Button>
+              <Button 
+                variant="success" 
+                size="lg" 
+                className="hero-btn"
+                onClick={handleDownload}
+              >
+                Get My CV
+              </Button>
+              <Button 
+                variant="outline-light" 
+                size="lg" 
+                className="hero-btn"
+                href="#contact"
+              >
+                Contact Me
+              </Button>
+            </div>
           </Col>
           <Col lg={6} className="d-none d-lg-block">
             <div className="hero-image mx-auto">
