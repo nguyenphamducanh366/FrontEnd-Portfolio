@@ -22,15 +22,7 @@ export default function Hero() {
       delay: 1
     });
   }, { scope: comp });
-  const handleDownload = () => {
-    const cvUrl = './assets/cv/Nguyen Pham Duc Anh-CV.pdf';
-    const link = document.createElement('a');
-    link.href = cvUrl;
-    link.download = 'Nguyen_Pham_Duc_Anh_CV.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+
 
   return (
     <section id="home" className="hero-section vh-100 d-flex align-items-center" ref={comp}>
@@ -56,9 +48,10 @@ export default function Hero() {
                 variant="success" 
                 size="lg" 
                 className="hero-btn"
-                onClick={handleDownload}
+                href="https://drive.google.com/file/d/1a3a98livFDdigty70MN0DWjCe8aP5gqn/view?usp=drive_link"
+                target='blank'
               >
-                Get My CV
+                See My CV
               </Button>
               <Button 
                 variant="outline-light" 
